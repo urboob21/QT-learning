@@ -1,6 +1,6 @@
 #include "widget.h"
 #include "ui_widget.h"
-
+#include "QDebug"
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Widget)
@@ -154,6 +154,7 @@ If it is not found i keep storing received message in buffer.
 void Widget::receiveMessage()
 {
     QByteArray dataBA = serialPort.readAll();
+    qDebug()<<dataBA;
     QString data(dataBA);
     buffer.append(data);
     int index = buffer.indexOf(code);
