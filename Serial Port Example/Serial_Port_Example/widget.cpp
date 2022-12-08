@@ -1,6 +1,7 @@
 #include "widget.h"
 #include "ui_widget.h"
 #include "QDebug"
+#include <QMessageBox>
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Widget)
@@ -156,6 +157,7 @@ void Widget::receiveMessage()
     QByteArray dataBA = serialPort.readAll();
     qDebug()<<dataBA;
     QString data(dataBA);
+    ui->textBrowser->setText(data);
     buffer.append(data);
     int index = buffer.indexOf(code);
     if(index != -1){
