@@ -1,8 +1,8 @@
 # QT-learning
 my Qt 
 how  
-line1 
-line2 
+- line1 
+- line2 
 | Cột 1 Hàng 1 | Cột 2 | Cột 3| Cột 4 |
 |--------------|-------|------|-------|
 | Hàng 2 | 2 x 1 | 2 x 2 | 2 x 3 | 2 x 4 |
