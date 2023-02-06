@@ -1,7 +1,5 @@
 # QT-learning
-my Qt
-how
-
-line1
-
-line2
+my Qt 
+how  
+line1 
+line2 
